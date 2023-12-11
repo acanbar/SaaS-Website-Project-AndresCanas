@@ -1,0 +1,719 @@
+/* iPads and Tablets - portrait */
+
+@media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"] { display: block; }
+
+  [aria-expanded="false"] ~ ul { display: none; }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: var(--size-50);
+    background-image: linear-gradient(to right, transparent, var(--font-color-link));
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px 0px 5px var(--font-color-link);
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: var(--size-20);
+    color: var(--font-color-dark);
+  }
+
+  .top_bg { height: 630px; }
+
+  .nav_items .btn.btn_blue { display: none; }
+
+  .empower { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .teams {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .teams div h2 {
+    color: var(--black);
+    font-size: 38px;
+    font-weight: 500;
+    margin: 20px auto;
+    width: 50%;
+  }
+
+  .teams .unlimited {
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  .learn_more {
+    justify-content: center;
+    margin-top: var(--size-20);
+  }
+
+  .logos {
+    position: relative;
+    margin-top: 60px;
+    height:250px;
+  }
+
+  .logoOne { right: 100px; }
+
+  .logoTwo { left: 300px; }
+
+  .logoThree {
+    top: 230px;
+    left: 250px;
+  }
+
+  .logoFour { left: 120px; }
+
+  .logoFive {
+    top: 110px;
+    left: 140px;
+  }
+  
+  .logoSix {
+    top: 110px;
+    left: 400px;
+  }
+  
+  .logoSeven {
+    top: 250px;
+    left: 490px;
+  }
+
+  /* ANIMATIONS */
+
+  @keyframes slidein3 {
+    from { top: 400px; }
+    to { top: 230px;}
+  }
+
+  @keyframes slidein5 {
+    from {top: 300px; }
+    to { top: 110px; }
+  }
+
+  @keyframes slidein6 {
+    from { top: 300px; }
+    to { top: 110px;}
+  }
+
+  @keyframes slidein7 {
+    from { top: 390px; }
+    to { top: 250px; }
+  }
+  
+  .benefit_card img { width: 3.0rem; }
+
+  .benefit_card p { max-width: 100%; }
+
+  /* SECTION LOOKS AND SOFTWARE FOR PEOPLE */
+
+  .looks {
+    margin-top: var(--size-100);
+    margin-bottom: var(--size-30);
+  }
+  
+  .prospectives {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .prospectives .different_things h2 {
+    width: 80%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .different_things div {
+    width: 20%;
+    max-width: 20%;
+    padding: var(--size-10) 0;
+    margin: var(--size-20) auto;
+  }
+
+  .softwarePeople { 
+    text-align: center;   
+    width: 100%; 
+    margin-bottom: -70px;
+  }
+  
+  .why h2 {
+    font-size: var(--size-24);
+    font-weight: 800;
+  }
+  
+  .looks .container.prospectives img {
+    padding-top: var(--size-30);
+    width: fit-content;
+    max-width: fit-content;
+  }
+
+  .dot {
+    height: var(--size-50);
+    width: var(--size-50);
+  }
+
+  /* SECTION EXEC DIRECTOR */
+
+  .hubSpot { flex-direction: column; }
+
+  .execDirector { 
+    display: flex;
+    justify-content: center;
+   }
+
+  .picDirector {
+    width: 50%;
+    max-width: 60%;
+  }
+
+  .dots {
+    width: 30%;
+    top: 15%;    
+    left: 22%;
+  }
+
+  .hubDescrip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hubDescrip img {
+    width: var(--size-100);
+    margin: 100px 130px 0px 130px;
+  }
+
+  .description, .nameDirec, .jobPosition {
+    font-size: var(--size-20);
+    text-align: center;
+    margin: var(--size-20) auto 0px auto;
+  }
+  
+  .description { width: 85%; }
+
+  .jobPosition {
+    font-size: var(--size-12);
+    color: var(--font-color-base);
+    margin: 0 0 var(--size-20) 0;
+  }
+
+  .trust { margin-top: -80px; }
+
+  .worldCompanies img { width: 70px; }
+
+  .pricing { font-size: var(--size-24); }
+
+  .addCosts { font-size: var(--size-16); }
+
+  .pricingBenefits {
+    flex-direction: column;
+    margin-bottom: var(--size-12);
+  }
+
+  .fiftyNine {
+    width: auto;
+    text-align: center;
+  }
+
+  .fiftyNine p {
+    width: auto;
+    max-width: 95%;
+    margin: 20px auto;
+    font-size: var(--size-16);
+  }
+
+  .cost {
+    font-size: var(--size-50);
+    color: var(--black);
+    font-weight: 500;
+  }
+
+  .frequency { font-size: var(--size-20); }
+
+  .conditions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: fit-content;
+  }
+
+  .title { font-size: var(--size-18); }
+
+  .wording { font-size: var(--size-14); }
+
+  .btn.btn_green { padding: 3px 14px; }
+
+  .sketch { margin-bottom: var(--size-20); }
+
+  /* HIRE FORM */
+
+  .container.hireusForm { flex-direction: column; }
+
+  .jobOpportunity { 
+    flex-direction: row;
+    margin: 20px 10px; 
+  }
+
+  .tophireUs { 
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .formHrule { width: 75%; }
+
+  .loveFront {
+    margin-bottom: 0;
+    width: 70%;
+  }
+
+  .goal p { width: 70%; }
+
+  .peopleJobs { 
+    display: flex; 
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .charlotte, .headCommercials, .faceBubbles { margin-left: -100px; }
+  
+  .faceBubbles { display: flex; }
+
+  /* Actual Form */
+
+  .jobForm { margin: auto; }
+
+  .fillInstruc { font-size: var(--size-16); }
+
+  .nameandCountry {
+    gap: var(--size-12);
+    margin: 0 var(--size-14);
+  }
+
+  .dataApplicant { width: 100%; }
+
+  .tellUs {
+    margin-right: var(--size-14); 
+    margin-left: var(--size-14);
+    width: 96%;
+  }
+
+  .marketing { font-size: var(--size-12); }
+
+  .privacyPolicy { margin: var(--size-30) auto; }
+
+  .privacyPolicy a {
+    color: var(--font-color-base);
+    text-decoration: dashed underline;
+    letter-spacing: 0.01rem;
+  }
+
+  /* Footer Section */
+
+  footer { margin-top: var(--size-50); }
+
+  .otherInfo { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .address .exactAddress { font-size: var(--size-12); }
+
+  .address img { width: 90px; }
+
+  .phoneNum { font-size: var(--size-12); }
+
+  .companyInfo ul li { font-size: 13px; }
+
+  .bottomFooter { padding: var(--size-40) 0; }
+
+  .rightsRes, .cookiesInfo { width: 100%;}
+}
+
+/* MOBILE VIEWPORT */
+/* MOBILE VIEWPORT */
+/* MOBILE VIEWPORT */
+
+@media screen and (max-width: 480px) {
+
+  .top_bg {
+    background-image:  linear-gradient(165deg, transparent 0%, transparent 70%, white 70% 67%, white),
+                       linear-gradient(105deg, transparent 0%, transparent 68%, #e5e8ee 68%, #e1e5ee 100%),
+                       linear-gradient(to top left, #edeff3, transparent 60%);
+    height: 750px;
+  }
+
+  .teams div h2 { 
+    width: 90%; 
+    font-size: var(--size-30); 
+  }
+
+  .teams .unlimited {
+    width: 75%;
+    margin: auto;
+    margin-bottom: var(--size-30);
+    font-size: var(--size-16);
+  }
+  .logoOne { right: 20px; }
+
+  .logoTwo { left: 130px; }
+
+  .logoThree {
+    top: 220px;
+    left: 150px;
+  }
+
+  .logoFour { left: 10px; }
+
+  .logoFive {
+    top: 110px;
+    left: 20px;
+  }
+  
+  .logoSix {
+    top: 130px;
+    left: 250px;
+  }
+  
+  .logoSeven {
+    top: 250px;
+    left: 300px;
+  }
+
+  /* ANIMATIONS */
+
+  @keyframes slidein3 {
+    from { top: 400px; }
+    to { top: 220px; }
+  }
+
+  @keyframes slidein6 {
+    from { top: 300px; }
+    to { top: 130px; } 
+  }
+ 
+  .key h2 { font-size: var(--size-30); }
+  
+  .key p {
+    margin: auto;
+    font-size: var(--size-18);
+    width: 85%;
+  }
+  
+  .benefit_card img { width: 3.5rem; }
+  
+  .benefit_card h3 { font-size: var(--size-18); }
+  
+  .benefit_card div a { 
+    font-size: var(--size-16);
+    font-weight: 600;
+  }
+  
+  .benefit_card p {
+    width: 95%;
+    font-size: var(--size-18);
+    margin-bottom: var(--size-18);
+    line-height: 1.9rem;
+  }
+
+  /* SECTION LOOKS AND SOFTWARE FOR PEOPLE */
+
+  .looks {
+    margin-top: var(--size-50);
+    margin-bottom: var(--size-50);
+  }
+
+  .different_things {
+    margin-left: var(--size-20);
+    margin-right: var(--size-20);
+    margin-top: -50px;
+  }
+
+  .prospectives .different_things h2 {
+    width: 100%;
+    font-size: var(--size-30);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .different_things .btn_blue {
+    width: auto;
+    padding: 15px 20px 15px 20px;
+    margin: 30px auto 40px;
+  }
+
+  .why p {
+    font-size: var(--size-20);
+    font-weight: 400;
+  }
+  
+  .graph hr { display: none; }
+
+  .graph { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .graphDes { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .startPoint { font-size: var(--size-18); }
+
+  .dot { margin-bottom: 0; }
+  
+  /* SECTION EXEC DIRECTOR */
+
+  .picDirector {
+    width: 65%;
+    max-width: 65%;
+  }
+
+  .dots {
+    width: 40%;
+    top: 12%;    
+    left: 14%;
+  }
+
+  .hubDescrip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hubDescrip img { width: 120px; }
+
+  .description, .nameDirec, .jobPosition {
+    font-size: var(--size-24);
+    margin: var(--size-20) auto var(--size-30) auto; 
+    width: 100%;
+  }
+
+  .nameDirec { margin-bottom: -20px; }
+
+  .jobPosition { font-size: var(--size-18); }
+
+  .worldCompanies {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--size-50);
+  }
+
+  .company { padding: 15px 0 ;}
+
+  .worldCompanies img { width: 100px; }
+
+  .pricing { font-size: var(--size-30); }
+
+  .addCosts { 
+    font-size: var(--size-20);
+    font-weight: 400;
+  }
+
+  .cost {
+    font-size: var(--size-50);
+    color: var(--black);
+    font-weight: 500;
+  }
+
+  .fiftyNine p {
+    width: 90%;
+    max-width: 90%;
+    margin: 40px auto;
+    font-size: var(--size-18);
+  }
+
+  .conditions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title { font-size: 22px; }
+
+  .wording {
+    font-size: var(--size-16);
+    width: 90%;
+    max-width: 95%;
+  }
+
+  .icons {
+    width: 60px;
+    margin-bottom: var(--size-14);
+  }
+
+  .btn.btn_green { 
+    padding: 5px var(--size-14); 
+    font-size: var(--size-14);
+    letter-spacing: 0.03rem;
+    font-weight: 500; 
+  }
+
+  /* HIRE FORM */
+
+  .container.hireusForm {
+    flex-direction: column;
+    padding-bottom: var(--size-18);
+  }
+
+  .jobOpportunity { flex-direction: column; }
+
+  .hireUs {
+    font-weight: 700;
+    font-size: var(--size-30);
+    text-align: center;
+  }
+
+  .goal p {
+    font-size: var(--size-18);
+    letter-spacing: 0.04rem; 
+    width: 100%;
+    text-align: center;
+  }
+
+  .formHrule { width: 100%; }
+  
+  .loveFront {
+    font-size: var(--size-18);
+    letter-spacing: 0.04rem;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .charlotte {
+    font-size: 22px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .headCommercials {
+    font-size: var(--size-16);
+    color: var(--contrast);
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .faceBubbles { 
+    margin-left: 0; 
+    margin-right: 0; 
+    justify-content: center;
+  }
+
+  /* Actual Form */
+
+  .jobForm { margin: auto; }
+
+  .fillInstruc { 
+    font-size: var(--size-18); 
+    font-weight: 600; 
+  }
+
+  .nameandCountry {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-20);
+    margin: 0 var(--size-24);
+  }
+
+  .dataApplicant { 
+    width: 100%;
+    height: var(--size-50); 
+  }
+
+  .dataApplicant::placeholder {
+    font-weight: 400;
+    opacity: 0.7;
+    color: rgb(88, 85, 85);
+    padding-left: 7px;
+    font-size: var(--size-16);
+  }
+  
+  #budget, #country { font-size: var(--size-16); }
+  
+  .tellUs {
+    margin-right: 110px; 
+    width: 95%;
+  }
+
+  .tellUs::placeholder {
+    font-weight: 400;
+    opacity: 0.6;
+    color: rgb(88, 85, 85);
+    padding-left: 7px;
+  }
+
+  .marketing { font-size: var(--size-16); }
+
+  /* Footer Section */
+
+  footer { margin-top: var(--size-50); }
+
+  .topFooter { 
+    flex-direction: column;     
+    text-align: center;
+  }
+
+  .otherInfo { 
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+  }
+
+  .address { margin-bottom: var(--size-30); }
+
+  .address .exactAddress { font-size: var(--size-20); }
+
+  .address img { 
+    width: 120px; 
+    margin: 0 auto;
+  }
+
+  .phoneNum { font-size: var(--size-20); }
+
+  .companyInfo h2 { font-size: var(--size-24); }
+
+  .companyInfo ul li { font-size: var(--size-20); }
+
+  .careerHireBtn { justify-content: center; }
+
+  .bottomFooter { 
+    flex-direction: column;
+    text-align: center; 
+  }
+
+  .siteMap { 
+    font-size: var(--size-16);
+    margin-bottom: var(--size-30);
+  }
+
+  .siteMap span { font-size: var(--size-16); }
+  
+  .mediaIcons div {
+    font-size: var(--size-12);
+    align-self: center;
+  }
+
+  .mediaIcons .country { font-size: var(--size-18); }
+
+  .rightsRes, .cookiesInfo {
+    width: 80%;
+    font-size: var(--size-16);
+    margin-bottom: var(--size-50);
+   }
+}

@@ -1,0 +1,253 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #2979FF;
+  --green: rgb(48, 190, 145);
+  --font-color-base: #666;
+  --font-color-dark: #212529;
+  --font-color-light: #b0aebe;
+  --font-color-link: #57A6FF;
+  --form: rgb(33, 33, 98);
+  --contrast: rgb(243, 240, 240);
+  --grad-1: #fff;
+  --grad-2: rgb(222, 227, 227);
+  --grad-3: #aed5ff;
+
+  --size-10: 0.625rem;
+  --size-13: 0.8125rem;
+  --size-12: 0.75rem;
+  --size-14: 0.875rem;
+  --size-16: 1.0rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem;
+  --size-24: 1.5rem;
+  --size-30: 1.875rem;
+  --size-40: 2.5rem;
+  --size-50: 3.125rem;
+  --size-60: 3.75rem;
+  --size-100: 6.25rem;
+  --size-150: 9.375rem;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  letter-spacing: 0; /* set to 0 to be in control of spacing instead of browser*/
+  color: var(--font-color-base);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+
+ul {
+  padding:  0;
+  margin: 0;
+  list-style: none;
+}
+
+a { 
+  text-decoration: none;
+  color: var(--font-color-base);
+}
+
+p { margin-top: 0; }
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  border-radius: 2.25rem;
+  transition: ease-in-out 0.3s;
+}
+
+.btn_blue {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: var(--size-10) var(--size-24);
+}
+
+.btn_green {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 2px 14px;
+  display: inline;
+  font-weight: 700;
+  font-size: var(--size-10);
+}
+
+input[type=checkbox] {
+  margin: 0 5px;
+  line-height: normal;
+  width: 35px;
+  height: 35px;
+  opacity: 0.6;
+  }
+
+/* ANIMATIONS */
+
+  .logoOne {
+    animation-duration: 1.3s;
+    animation-name: slidein1;
+    animation-timing-function:ease;
+  }
+
+  @keyframes slidein1 {
+    from {
+      top: 80px;
+      opacity: 0.1;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  .logoTwo {
+    animation-duration: 1.5s;
+    animation-name: slidein2;
+    animation-timing-function:ease;
+  }
+
+  @keyframes slidein2 {
+    from {
+      top: 130px;
+      opacity: 0.1;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  .logoThree {
+    animation-duration: 1s;
+    animation-name: slidein3;
+    animation-timing-function:ease;
+  }
+
+  @keyframes slidein3 {
+    from {
+      top: 400px;
+      opacity: 0.1;
+    }
+
+    to {
+      top: 270px;
+      opacity: 1;
+    }
+  }
+
+  .logoFour {
+    animation-duration: 1.3s;
+    animation-name: slidein4;
+    animation-timing-function:ease;
+  }
+
+  @keyframes slidein4 {
+    from {
+      top: 150px;
+      opacity: 0.1;
+    }
+
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  .logoFive {
+    animation-duration: 1.3s;
+    animation-name: slidein5;
+    animation-timing-function:ease;
+  }
+
+  @keyframes slidein5 {
+    from {
+      top: 300px;
+      opacity: 0.1;
+    }
+
+    to {
+      top: 150px;
+      opacity: 1;
+    }
+  }
+
+  .logoSix {
+    animation-duration: 1.3s;
+    animation-name: slidein6;
+    animation-timing-function:ease;
+  }
+
+  @keyframes slidein6 {
+    from {
+      top: 300px;
+      opacity: 0.1;
+    }
+
+    to {
+      top: 150px;
+      opacity: 1;
+    }
+  }
+
+  .logoSeven {
+    animation-duration: 1.8s;
+    animation-name: slidein7;
+    animation-timing-function:ease;
+  }
+
+  @keyframes slidein7 {
+    from {
+      top: 390px;
+      opacity: 0.1;
+    }
+
+    to {
+      top: 290px;
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container { max-width: 1140px;}
+  }
+  
